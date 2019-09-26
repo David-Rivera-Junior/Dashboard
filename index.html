@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    
+    <meta charset="utf-8">
+    <title>Sistema de Facturación (Ventas y Compras)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+    <meta name="author" content=" Ahuachapán: CDS">
+
+    <!-- The styles -->
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="css/charisma-app.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The fav icon -->
+    <link rel="shortcut icon" href="img/logosibs.png">
+
+</head>
+
+<body>
+    <!--Inicia barra superior-->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><font face="Arial">IBS<font></a>
+
+            <!-- tipo de usuario -->
+            <div class="btn-group pull-right">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs">Usuario</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    
+                    <li><a href="login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+            <!-- finaliza tipo de usuario -->
+
+    <!-- Cambiar la apariencia -->
+    <div class="btn-group pull-right theme-container animated tada">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-tint"></i><span
+                class="hidden-sm hidden-xs">Cambiar Tema</span>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" id="themes">
+            <li><a data-value="classic" href="#"><i class="whitespace"></i> Clasico</a></li>
+            <li><a data-value="cerulean" href="#"><i class="whitespace"></i> Azul Claro</a></li>
+            <li><a data-value="cyborg" href="#"><i class="whitespace"></i> Negro</a></li>
+            <li><a data-value="simplex" href="#"><i class="whitespace"></i> Simple</a></li>
+            <li><a data-value="darkly" href="#"><i class="whitespace"></i> Invertido</a></li>
+            <li><a data-value="lumen" href="#"><i class="whitespace"></i> Blanco Invertido</a></li>
+            <li><a data-value="slate" href="#"><i class="whitespace"></i> Negro Normal</a></li>
+            <li><a data-value="spacelab" href="#"><i class="whitespace"></i> Negro Palido</a></li>
+            <li><a data-value="united" href="#"><i class="whitespace"></i> Rojo Invertido</a></li>
+        </ul>
+    </div>
+     <!--finaliza la apariencia --> 
+                    </form>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
+    <!--finaliza barra superior-->
+<div class="ch-container">
+    <div class="row">
+
+        <!--inicia menu izquierdo -->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li><a class="ajax-link" href="index.html"></i><i class="glyphicon glyphicon-home"></i><span> Inicio</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="usuarios.html"><i class="glyphicon glyphicon-th-large"></i><span>Usuarios</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="clientes.html"><i class="glyphicon glyphicon-user"></i><span>Clientes</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="ventas.html"><i class="glyphicon glyphicon-user"></i><span>Ventas</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="productos.html"><i class="glyphicon glyphicon-briefcase"></i><span> Productos</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="compras.html"><i class="glyphicon glyphicon-tag"></i><span> Compras</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="categorias.html"><i class="glyphicon glyphicon-ok"></i><span> Categorias</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="marcas.html"><i class="glyphicon glyphicon-tint"></i><span> Marcas</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="bitacora.html"><i class="glyphicon glyphicon-th"></i><span> Bitácora</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="inventario.html"><i class="glyphicon glyphicon-book"></i><span> Inventario</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="roles.html"><i class="glyphicon glyphicon-wrench"></i><span>Roles</span></a>
+                        </li>
+                        <li><a href="login.html"><i class="glyphicon glyphicon-lock"></i><span> Inicio de sesión</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--finaliza menu izquierdo-->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!--Inicia contenido-->
+    <hr>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h3>Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here settings can be configured...</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="row">
+        <p class="col-md-9 col-sm-9 col-xs-12 copyright"><font>CDS Ahuachapán 2019</font></p>
+
+        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Proyecto: <font>IBS</font></p>
+    </footer>
+
+</div>
+<!-- contenedor de fluido -->
+
+<!-- javascript externo -->
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- biblioteca para la gestión de cookies -->
+<script src="js/jquery.cookie.js"></script>
+<!-- complemento de calendario -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<!-- complemento de tabla de datos -->
+<script src='js/jquery.dataTables.min.js'></script>
+<!-- seleccionar o desplegable potenciador -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin para ver la imagen de la galería -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!--complemento de notificación -->
+<script src="js/jquery.noty.js"></script>
+<!-- biblioteca para hacer tablas receptivas -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- complemento turístico -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- plugin de clasificación por estrellas -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- para interruptor de palanca estilo iOS -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- complemento de textarea de crecimiento automático-->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- complemento de carga de archivos múltiples-->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js para el cambio de estado entre navegadores en ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- script de aplicación para la demostración de Carisma-->
+<script src="js/charisma.js"></script>
+
+
+</body>
+</html>

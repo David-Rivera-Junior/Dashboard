@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <title>Sistema de Facturación (Ventas y Compras)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+    <meta name="author" content="Muhammad Usman">
+    <link rel="stylesheet" href="./Sistema de Facturación (Ventas y Compras)_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- The styles -->
+    <link id="bs-css" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/charisma-app.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/chosen/chosen.min.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/colorbox/example3/colorbox.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/responsive-tables/responsive-tables.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/jquery.noty.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/noty_theme_default.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/elfinder.min.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/elfinder.theme.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/jquery.iphone.toggle.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/uploadify.css" rel="stylesheet">
+    <link href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/css/animate.min.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/jquery/jquery.min.js"></script>
+
+    <link rel="shortcut icon" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/img/favicon.ico">
+
+</head>
+
+<body style="">
+    <!--Inicia barra superior-->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/index.html">
+                <font face="Arial">IBS<font>
+            </font></font></a><font face="Arial"><font>
+
+            <!-- tipo de usuario -->
+            <div class="btn-group pull-right">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs">Usuario</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#">Perfil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+            <!-- finaliza tipo de usuario -->
+
+    <!-- Cambiar la apariencia -->
+    <div class="btn-group pull-right theme-container animated tada">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-tint"></i><span class="hidden-sm hidden-xs">Cambiar Tema</span>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" id="themes">
+            <li><a data-value="classic" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> Classic</a></li>
+            <li><a data-value="cerulean" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="glyphicon glyphicon-ok"></i> Cerulean</a></li>
+            <li><a data-value="cyborg" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> Cyborg</a></li>
+            <li><a data-value="simplex" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> Simplex</a></li>
+            <li><a data-value="darkly" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> Darkly</a></li>
+            <li><a data-value="lumen" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> Lumen</a></li>
+            <li><a data-value="slate" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> Slate</a></li>
+            <li><a data-value="spacelab" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> Spacelab</a></li>
+            <li><a data-value="united" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#"><i class="whitespace"></i> United</a></li>
+        </ul>
+    </div>
+    <!--finaliza la apariencia -->  
+                    
+                
+            
+
+        </font></font></div><font face="Arial"><font>
+    </font></font></div><font face="Arial"><font>
+    
+    <!--finaliza barra superior-->
+<div class="ch-container">
+    <div class="row">
+        
+        <!--inicia menu izquierdo-->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">Menu</li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/index.html"><i class="glyphicon glyphicon-home"></i><span> Inicio</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/usuarios.html"><i class="glyphicon glyphicon-th-large"></i><span>Usuarios</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/clientes.html"><i class="glyphicon glyphicon-user"></i><span>Clientes</span></a>
+                        </li>
+                        <li class="active"><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html"><i class="glyphicon glyphicon-user"></i><span>Ventas</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/productos.html"><i class="glyphicon glyphicon-briefcase"></i><span> Productos</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/compras.html"><i class="glyphicon glyphicon-tag"></i><span> Compras</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/categorias.html"><i class="glyphicon glyphicon-ok"></i><span> Categorias</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/marcas.html"><i class="glyphicon glyphicon-tint"></i><span> Marcas</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bitacora.html"><i class="glyphicon glyphicon-th"></i><span> Bitácora</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/inventario.html"><i class="glyphicon glyphicon-book"></i><span> Inventario</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/roles.html"><i class="glyphicon glyphicon-wrench"></i><span>Roles</span></a>
+                        </li>
+                        <li><a href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/login.html"><i class="glyphicon glyphicon-lock"></i><span> Inicio de sesión</span></a>
+                        </li>
+                </ul></div>
+            </div>
+        </div>
+        <!--finaliza menu izquierdo-->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!--Inicia contenedor -->
+                <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#">Inicio</a>
+            </li>
+            <li>
+                <a href="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/ventas.html#">Ventas</a>
+            </li>
+            </ul>
+        </div>
+<!--inicia tabla de ventas-->
+    <div class="row"></div>
+    <div class="box col-md-12">
+    <div class="box-header well" data-original-title="">
+        <h2><i class="glyphicon glyphicon-shopping-cart"></i>FACTURA COMERCIAL</h2> 
+    <table class="tablaventas">
+    <tbody><tr>
+        <td id="tablacliente">Cliente: <input type="text" name="cliente" class="tablaclientef"></td>
+    </tr>
+    <tr>
+        <td id="tablafecha">Fecha:<input type="text" name="Fecha" class="tablafechaf"></td>
+    </tr>
+    <tr>
+        <td id="tabladireccion">Dirección:  <input type="text" name="direccion" class="tabladireccionf"></td>
+     </tr>
+     <tr>
+        <td>Vendido por:  <input type="text" name="vendido por" class="vendidop"></td>
+     </tr>
+        </tbody></table>
+     <table class="tablaventas2">
+        <tbody><tr>
+            <td id="cantidad">Cantidad:  <input type="text" name="cantidad" class="cantidadp"></td>
+        </tr>
+        <tr>
+            <td id="tabladescripcion">Descripción:  <textarea cols="45" rows="2" class="tabladescripcionf" name="descripcion"></textarea></td> 
+       </tr>
+        <tr>
+                <td id="credito">Tipo de venta:
+                        <select class="creditof">
+                            <option value="1">Credito</option>
+                            <option value="2">Contado</option>
+                     </select>
+                 </td>   
+                
+            </tr>
+            <tr>
+                <td id="precio">Precio:  <input type="text" name="precio" class="preciop"></td>
+            </tr>
+            <tr>
+            <td id="valor">Valor:  <input type="text" name="valor" class="valorp"></td>
+            </tr>
+            <tr>
+                <td id="total">Total:  <input type="text" name="valor" class="totalp"></td>
+                </tr>
+                <tr>
+                    <td id="son">Son:  <input type="text" name="valor" class="sonp"></td>
+                    </tr>
+
+     </tbody></table>
+     <div>
+        <button type="button" class="btn btn-success" id="confirmar">Confirmar</button>
+        <button type="button" class="btn btn-danger" id="cancelar">Cancelar</button>
+             </div>
+  
+          
+<!--termina tabla de ventas-->
+    
+<!--<footer class="row">
+    <p class="col-md-9 col-sm-9 col-xs-12 copyright"><font>CDS Ahuachapán 2019</font></p>
+
+    <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Proyecto: <font>IBS</font></p>
+</footer>
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/moment/min/moment.min.js"></script>
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<!-- data table plugin -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.dataTables.min.js"></script>
+
+<!-- select or dropdown enhancer -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="file:///E:/Rooney/dashboard%20Final%20-%20copia%20-%20copia/js/charisma.js"></script>
+
+
+</div></div></div></div></div></font></font><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>

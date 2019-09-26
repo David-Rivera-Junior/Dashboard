@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>list Producto</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="public/css/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="./public/css/estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="container-fluid">
+	<jsp:include page="../componentes/navbar.jsp" />
+     <h1 class="text-center mt-fixed-nav"  style=margin-top:20px; >Productos</h1>
+	 <button type="button" class="btn btn-outline-success col-2005 offset-10" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Agregar Productos</button> 
+	 <container class="col-9 offset-1" style="margin-top: 20px;">
+			<table class="table table-striped text-center col-2005 offset-20" id="tableProducto">
+			<thead>
+			<tr>
+				<th>Correlativo</th>
+				<th>Nombre</th>
+				<th>Presentacion</th>
+				<th>Fecha de Vencimiento</th>
+				<th>Costo</th>                     
+				<th>Categoria</th>
+				<th>Marca</th>
+				<th>Stock</th>
+				<th>Editar</th>
+				<th>Eliminar</th>
+			</tr>
+			</thead>
+			<tbody>
+			<c:forEach items="${productoList}" var="producto">
+            <!--
+			<tr>
+				<td>${producto.idProducto}</td>
+				<td>${producto.nombreProducto}</td>
+				<td>${producto.presentacion}</td>
+				<td>${producto.cantidad}</td>
+				<td>${producto.marcas.nombreMarca}</td>
+				<td>${producto.categorias.nombreCategoria}</td>
+				
+				<td>-->
+					<!----<form action="<c:url value="/ProductoController"/>" method="POST">
+	                           <input type="hidden" name="option" value="update_redirect">
+	                           <input type="hidden" name="id_producto" value="${producto.idProducto}">
+	                           <input type="hidden" name="nombre_producto" value="${producto.nombreProducto}">
+	                           <input type="hidden" name="presentacion" value="${producto.presentacion}">
+	                           <input type="hidden" name="cantidad" value="${producto.cantidad}}">
+	                           <input type="hidden" name="id_marca" value="${producto.marcas.idMarca}">
+	                           <input type="hidden" name="id_categoria" value="${producto.categorias.idCategoria}">
+	                           <input type="submit" value="Editar" class="btn btn-outline-success col-10">
+					</form>
+				</td>
+				<td>
+					<form action="<c:url value="/ProductoController"/>" method="POST">
+	                           <input type="hidden" name="option" value="delete_redirect">
+	                           <input type="hidden" name="id_producto" value="${producto.idProducto}">
+	                           <input type="hidden" name="nombre_producto" value="${producto.nombreProducto}">
+	                           <input type="submit" value="Eliminar" class="btn btn-outline-danger col-10">
+					</form>-->
+				</td>
+			</tr>
+		</c:forEach>
+		</tbody>
+	</table>
+  </container>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Nuevo Producto</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+				<div class="form-group">
+					<label for="recipient-name" class="col-form-label">Producto:</label>
+					<input type="text" class="form-control" id="recipient-name">
+				</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+				<button type="button" class="btn btn-outline-success">Crear</button>
+			</div>
+			</div>
+		</div>
+		</div>
+  <script>
+            $(document).ready(function() {
+            $('#tableProducto').DataTable( {
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ ",
+                    "zeroRecords": "Registro no encontrado",
+                    "info": "Mostar p�ginas _PAGE_ de _PAGES_",
+                    "infoEmpty": "Datos no encontrados",
+                    "infoFiltered": "(Filtrados por _MAX_ total registros)",
+                    "search":         "Buscar:",
+                    "paginate": {
+                            "first":      "First",
+                            "last":       "Anterior",
+                            "next":       "Siguiente",
+                            "previous":   "Anterior"
+                    },
+                    
+                }
+            } );
+            } );
+           
+        </script>
+</body>
+</html>

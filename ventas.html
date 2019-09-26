@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Sistema de Facturación (Ventas y Compras)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+    <meta name="author" content="Muhammad Usman">
+    
+    <!-- The styles -->
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="css/charisma-app.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!--jQuery-->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+    <!--Inicia barra superior-->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <font face="Arial">IBS<font>
+            </a>
+
+            <!-- tipo de usuario -->
+            <div class="btn-group pull-right">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class=" botonusuario glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs">Usuario</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Perfil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+            <!-- finaliza tipo de usuario -->
+
+    <!-- Cambiar la apariencia -->
+    <div class="btn-group pull-right theme-container animated tada">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-tint"></i><span
+                class="hidden-sm hidden-xs">Cambiar Tema</span>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" id="themes">
+            <li><a data-value="classic" href="#"><i class="whitespace"></i> Classic</a></li>
+            <li><a data-value="cerulean" href="#"><i class="whitespace"></i> Cerulean</a></li>
+            <li><a data-value="cyborg" href="#"><i class="whitespace"></i> Cyborg</a></li>
+            <li><a data-value="simplex" href="#"><i class="whitespace"></i> Simplex</a></li>
+            <li><a data-value="darkly" href="#"><i class="whitespace"></i> Darkly</a></li>
+            <li><a data-value="lumen" href="#"><i class="whitespace"></i> Lumen</a></li>
+            <li><a data-value="slate" href="#"><i class="whitespace"></i> Slate</a></li>
+            <li><a data-value="spacelab" href="#"><i class="whitespace"></i> Spacelab</a></li>
+            <li><a data-value="united" href="#"><i class="whitespace"></i> United</a></li>
+        </ul>
+    </div>
+    <!--finaliza la apariencia -->  
+                    </form>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
+    <!--finaliza barra superior-->
+<div class="ch-container">
+    <div class="row">
+        
+        <!--inicia menu izquierdo-->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">Menu</li>
+                        <li><a class="ajax-link" href="index.html"></i><i class="glyphicon glyphicon-home"></i><span> Inicio</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="usuarios.html"><i class="glyphicon glyphicon-th-large"></i><span>Usuarios</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="clientes.html"><i class="glyphicon glyphicon-user"></i><span>Clientes</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="ventas.html"><i class="glyphicon glyphicon-shopping-cart"></i><span>Ventas</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="productos.html"><i class="glyphicon glyphicon-briefcase"></i><span> Productos</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="compras.html"><i class="glyphicon glyphicon-tag"></i><span> Compras</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="categorias.html"><i class="glyphicon glyphicon-ok"></i><span> Categorias</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="marcas.html"><i class="glyphicon glyphicon-tint"></i><span> Marcas</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="bitacora.html"><i class="glyphicon glyphicon-th"></i><span> Bitácora</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="inventario.html"><i class="glyphicon glyphicon-book"></i><span> Inventario</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="roles.html"><i class="glyphicon glyphicon-wrench"></i><span>Roles</span></a>
+                        </li>
+                        <li><a href="login.html"><i class="glyphicon glyphicon-lock"></i><span> Inicio de sesión</span></a>
+                        </li>
+                </div>
+            </div>
+        </div>
+        <!--finaliza menu izquierdo-->
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!--Inicia contenedor -->
+                <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Ventas</a>
+            </li>
+            </ul>
+        </div>
+<!--inicia tabla de ventas-->
+    <div class="row"></div>
+    <div class="box col-md-11">
+    <div class="box-header well" data-original-title="">
+        <h2><i class="glyphicon glyphicon-shopping-cart"></i>FACTURA COMERCIAL</h2> 
+    <table class="tablaventas">
+    <tr>
+        <td id="tablacliente">Cliente: <input type="text" name="cliente" class="tablaclientef"></td>
+    </tr>
+    <tr>
+        <td id="tablafecha">Fecha:<input type="text" name="Fecha" class="tablafechaf"></td>
+    </tr>
+    <tr>
+        <td id="tabladireccion">Dirección:<input type="text" name="direccion" class="tabladireccionf"></td>
+     </tr>
+     <tr>
+        <td>Vendido por:  <input type="text" name="vendido por" class="vendidop"></td>
+     </tr>
+        </table>
+     
+        <div class="container">
+                <h2>Comprar productos</h2>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Agregar</button>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" id="producto" disabled value="Vaso"></td>
+                            <td><input type="text" class="form-control" id="cantidad" value="3"></td>
+                            <td><input type="text" class="form-control" id="cantidad" value="10"></td>
+                            <td><input type="text" class="form-control" id="total" value="30" disabled></td>
+                            <td><button type="button" class="btn btn-default">Remover</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+        
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+        
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Agregar producto a la lista</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="producto">Buscar Producto</label>
+                                    <input type="text" class="form-control" id="producto">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Agregar</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+          
+<!--termina tabla de ventas-->
+    
+<!--<footer class="row">
+    <p class="col-md-9 col-sm-9 col-xs-12 copyright"><font>CDS Ahuachapán 2019</font></p>
+
+    <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Proyecto: <font>IBS</font></p>
+</footer>
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="js/charisma.js"></script>
+</body>
+</html>
